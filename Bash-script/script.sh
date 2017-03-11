@@ -34,6 +34,6 @@ for i in  "${host_name[@]}"
     ssh -q "$host_name"                                       ##ssh on to the server(hostname) 
     # call your procedure/other scripts here below
 
-    cat hosts.csv   ##can be commented to check the values in .csv file
-    exit   ##after every execution it exits n takes the next value in array
+    cat hosts.csv   ##can be commented is just to check the values in .csv file
+    exit   ##after every execution it exits and takes the next value in array
   done
