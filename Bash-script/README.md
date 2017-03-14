@@ -1,8 +1,8 @@
 The bash script is executed and tested and performs the following functions:
 
-It takes the hostname in one variable and stores it in a file.
+Takes the hostname in one variable and stores it in a file.
 
-Extracts the content in and array so that it is feasible to run the for loop.
+Extracts the content in an array so that it is feasible to run the for loop.
 
 Then takes the count of the array and with that count it iterates the for loop.
 
