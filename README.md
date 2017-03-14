@@ -1,4 +1,4 @@
-Docker Containers for installing Python 2.7 , MongoDB - any version , Apache tomcat 7 - running on port 8080 are written in 3 separete directories,
+Docker Containers for installing Python 2.7 , MongoDB - any version , Apache tomcat 7 - running on port 8080 are written in 3 separate directories,
 If needed these file can be merged as one single image to run as a a signle container.
 
 ## Steps To Push Dockerfile 
