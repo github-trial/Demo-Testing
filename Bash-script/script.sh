@@ -27,11 +27,11 @@ for i in  "${host_name[@]}"
   do
    
     #this variable takes the ip  w.r.t its host_name and is "comma separated"
-    host_ip="$(grep "$host_name" /etc/hosts | sed "s/,/ /g")"
+    host_ip="$(grep "$i" /etc/hosts | sed "s/,/ /g")"
     echo "$host_ip" | sed "s/ /,/g" >> hosts.csv              ##takes the value of host_name and its ip in a csv file
     
-    ping -q -c1 -t1 "$host_name" | grep -Eo "([0-9]+\.?){4}"  ##Pings the hostname
-    ssh -q "$host_name"                                       ##ssh on to the server(hostname) 
+    ping -q -c1 -t1 "$i" | grep -Eo "([0-9]+\.?){4}"  ##Pings the hostname
+    ssh -q "$i"                                       ##ssh on to the server(hostname) 
     # call your procedure/other scripts here below
 
     cat hosts.csv   ##can be commented is just to check the values in .csv file
